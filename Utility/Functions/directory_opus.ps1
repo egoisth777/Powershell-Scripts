@@ -13,8 +13,7 @@ function op {
         return
     }
     
-    # Default Directory Opus executable path
-    # Adjust this path if your Directory Opus is installed in a different location
+    # Default Directory Opus executable path # Adjust this path if your Directory Opus is installed in a different location
     $dopusPath = "C:\Application\Productivity\Directory Opus\dopus.exe"
     
     # Check if Directory Opus executable exists
