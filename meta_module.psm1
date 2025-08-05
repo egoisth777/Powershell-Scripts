@@ -13,7 +13,7 @@ $Modules = Get-ChildItem -Path $ModuleRoot -Directory | Where-Object {
 foreach ($Module in $Modules) {
     $ModuleName = $Module.Name
     $ModulePath = Join-Path $Module.FullName "$ModuleName.psd1"
-    
+    Write-Host($ModulePath)
     # If module has a manifest file, import it using that
     if (Test-Path $ModulePath) {
         Import-Module $ModulePath -Global
